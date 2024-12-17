@@ -1,0 +1,13 @@
+ANALISE DE TOPICOS
+
+-Conseguimos observar que os tópicos 2 e 3 são fortemente associados a tweets positivos, por outro lado as classes negativo e neutro apresentam uma correlação menor em comparação com os 3 tópicos. Também é observável que o tópico 1 não apresenta nenhuma relação com nenhum das classes.
+
+CLASSIFICAÇÂO DE SENTIMENTOS
+
+-Os modelos de Regressão Logística e Naive Bayes apresentam um desempenho geral aceitável, mas com dificuldades devido ao desbalanceamento de classes. A classe "Negativo", com apenas 29 instâncias, é frequentemente mal classificada, sendo confundida com "Neutro" e "Positivo". As classes "Positivo" e "Neutro" têm um desempenho melhor, especialmente na Regressão Logística. Para melhorar os resultados, seria importante equilibrar as classes, ajustando os parâmetros dos modelos ou aplicando técnicas de oversampling ou undersampling.
+
+
+
+-A matriz de confusão mostra que o modelo de análise de sentimentos classifica corretamente a maioria dos tweets como "Positivo", mas há uma tendência de confundir as duas classes. A classe "Negativo" é frequentemente classificada como "Positivo", com 202 instâncias de "Negativo" mal classificadas, enquanto a classe "Positivo" também é confundida, com 66 instâncias incorretas.
+
+Isso pode ser explicado pela natureza subjetiva e contextualmente variável de sentimentos em alguns tweets. Para além disso este modelo de classificação apenas classifica como "Negativo" ou "Positivo" enquanto o dataset trabalhado apresenta uma terceira classe "Neutro".
